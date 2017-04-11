@@ -76,3 +76,19 @@ var WorkspaceMeta = React.createClass({
     );
   }
 });
+
+var ImagePreview = React.createClass({
+  displayName: 'ImagePreview',
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'ImagePreview', style: { 'backgroundImage': 'url(' + this.props.image + ')' } },
+      React.createElement(
+        'div',
+        { className: 'WorkspaceOverview' },
+        React.createElement(WorkspaceInformation, { name: 'Coworking Space, South Korea', price: this.props.price, duration: '1' }),
+        React.createElement(WorkspaceMeta, { people: this.props.people })
+      )
+    );
+  }
+});
