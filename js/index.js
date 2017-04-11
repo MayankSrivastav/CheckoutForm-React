@@ -92,3 +92,113 @@ var ImagePreview = React.createClass({
     );
   }
 });
+
+var OrderSummary = React.createClass({
+  displayName: 'OrderSummary',
+  render: function render() {
+    var _props = this.props;
+    var duration = _props.duration;
+    var discount = _props.discount;
+    var tax = _props.tax;
+    var price = _props.price;
+
+    console.log(duration + '' + discount + '' + tax + '' + price);
+    var thisDuration = duration > 1 ? duration + ' days' : duration + ' day';
+    var initialTotal = duration * price;
+    var thisDiscount = Math.floor(initialTotal / 100 * discount);
+    var subTotal = initialTotal - discount;
+    var thisTax = Math.floor(subTotal / 100 * tax);
+    var total = subTotal + thisTax;
+
+    return React.createElement(
+      'div',
+      { className: 'OrderSummary' },
+      React.createElement(
+        'div',
+        { className: 'Title' },
+        'Order Summary'
+      ),
+      React.createElement(
+        'table',
+        null,
+        React.createElement(
+          'tr',
+          null,
+          React.createElement(
+            'td',
+            null,
+            price,
+            ' x ',
+            thisDuration
+          ),
+          React.createElement(
+            'td',
+            null,
+            initialTotal,
+            ' INR'
+          )
+        ),
+        React.createElement(
+          'tr',
+          null,
+          React.createElement(
+            'td',
+            null,
+            'Discount'
+          ),
+          React.createElement(
+            'td',
+            null,
+            thisDiscount,
+            ' INR'
+          )
+        ),
+        React.createElement(
+          'tr',
+          null,
+          React.createElement(
+            'td',
+            null,
+            'Subtotal'
+          ),
+          React.createElement(
+            'td',
+            null,
+            subTotal,
+            ' INR'
+          )
+        ),
+        React.createElement(
+          'tr',
+          null,
+          React.createElement(
+            'td',
+            null,
+            'Tax'
+          ),
+          React.createElement(
+            'td',
+            null,
+            thisTax,
+            ' INR'
+          )
+        )
+      ),
+      React.createElement(
+        'div',
+        { className: 'Total' },
+        React.createElement(
+          'div',
+          { className: 'TotalLabel' },
+          'Total'
+        ),
+        React.createElement(
+          'div',
+          { className: 'Amount' },
+          total,
+          ' GBP'
+        )
+      )
+    );
+  }
+});
