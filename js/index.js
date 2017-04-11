@@ -202,3 +202,26 @@ var OrderSummary = React.createClass({
     );
   }
 });
+
+var PaymentForm = React.createClass({
+  displayName: 'PaymentForm',
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'PaymentForm' },
+      React.createElement(
+        'form',
+        { onSubmit: this.props.onSubmit },
+        React.createElement(
+          'div',
+          { className: 'Title' },
+          'Payment Information'
+        ),
+        React.createElement(BasicInput, { name: 'name', label: 'NAME ON CREDIT CARD', type: 'text', placeholder: 'Mayank Srivastav' }),
+        React.createElement(BasicInput, { name: 'card', label: 'CREDIT CARD NUMBER', type: 'number', placeholder: '0000 0000 0000 0000' }),
+        React.createElement(ExpiryDate, null),
+        React.createElement(CheckoutButton, null)
+      )
+    );
+  }
+});
