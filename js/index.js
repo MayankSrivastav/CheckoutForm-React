@@ -47,3 +47,32 @@ var WorkspaceInformation = React.createClass({
     );
   }
 });
+
+var WorkspaceMeta = React.createClass({
+  displayName: 'WorkspaceMeta',
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'WorkspaceMeta' },
+      React.createElement(
+        'div',
+        { className: 'Description' },
+        'Entire office for ',
+        React.createElement(
+          'strong',
+          null,
+          this.props.people
+        )
+      ),
+      React.createElement(
+        'div',
+        { className: 'Dates' },
+        React.createElement(
+          'strong',
+          null,
+          'Tue, Apr 4'
+        )
+      )
+    );
+  }
+});
