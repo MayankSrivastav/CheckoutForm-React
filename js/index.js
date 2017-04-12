@@ -377,3 +377,20 @@ ar ExpiryDate = React.createClass({
     );
   }
 });
+
+var BasicInput = React.createClass({
+  displayName: 'BasicInput',
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'BasicInput' },
+      React.createElement(
+        'label',
+        { 'for': this.props.name },
+        this.props.label,
+        ' '
+      ),
+      React.createElement('input', { id: this.props.name, type: this.props.type, placeholder: this.props.placeholder })
+    );
+  }
+});
