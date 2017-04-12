@@ -394,3 +394,15 @@ var BasicInput = React.createClass({
     );
   }
 });
+
+var Checkout = React.createClass({
+  displayName: 'Checkout',
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'Checkout' },
+      React.createElement(OrderSummary, { discount: this.props.discount, tax: this.props.tax, price: this.props.price, duration: this.props.duration }),
+      React.createElement(PaymentForm, { onSubmit: this.props.onSubmit })
+    );
+  }
+});
