@@ -225,3 +225,24 @@ var PaymentForm = React.createClass({
     );
   }
 });
+
+var CheckoutButton = React.createClass({
+  displayName: 'CheckoutButton',
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'CheckoutButton' },
+      React.createElement(
+        'button',
+        null,
+        'Book Securely'
+      ),
+      React.createElement(
+        'span',
+        null,
+        React.createElement('i', { className: 'fa fa-fw fa-lock' }),
+        ' Your credit card information is encrypted'
+      )
+    );
+  }
+});
