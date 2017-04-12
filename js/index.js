@@ -364,3 +364,16 @@ ar ExpiryDate = React.createClass({
           )
         )
       ),
+      React.createElement(
+        'div',
+        { className: 'CVCField' },
+        React.createElement(
+          'label',
+          null,
+          'CVC'
+        ),
+        React.createElement('input', { type: 'number', placeholder: '000' })
+      )
+    );
+  }
+});
