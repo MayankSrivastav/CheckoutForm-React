@@ -455,3 +455,12 @@ var App = React.createClass({
         React.createElement(Checkout, { discount: this.state.discount, tax: this.state.tax, price: this.state.price, duration: this.state.duration, onSubmit: this.handleSubmit })
       );
     }
+    return React.createElement(
+      'div',
+      { className: 'App' },
+      overlay,
+      container,
+      React.createElement(Header, { onChange: this.handleChange })
+    );
+  }
+});
