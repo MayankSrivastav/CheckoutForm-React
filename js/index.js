@@ -443,3 +443,15 @@ var App = React.createClass({
       duration: e.target.value
     });
   },
+  render: function render() {
+    var overlay = undefined,
+        container = undefined;
+    if (this.state.mounted) {
+      overlay = React.createElement(Overlay, { image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg' });
+      container = React.createElement(
+        Container,
+        null,
+        React.createElement(ImagePreview, { price: this.state.price, duration: this.state.duration, people: this.state.people, image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg' }),
+        React.createElement(Checkout, { discount: this.state.discount, tax: this.state.tax, price: this.state.price, duration: this.state.duration, onSubmit: this.handleSubmit })
+      );
+    }
