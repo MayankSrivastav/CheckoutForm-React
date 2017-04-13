@@ -417,3 +417,16 @@ var Header = React.createClass({
     );
   }
 });
+
+var App = React.createClass({
+  displayName: 'App',
+  getInitialState: function getInitialState() {
+    return {
+      mounted: false,
+      people: 1,
+      price: 320.00,
+      tax: 20,
+      duration: 5,
+      discount: 5
+    };
+  }
