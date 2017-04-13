@@ -429,4 +429,9 @@ var App = React.createClass({
       duration: 5,
       discount: 5
     };
-  }
+  },
+  componentDidMount: function componentDidMount() {
+    this.setState({
+      mounted: true
+    });
+  },
