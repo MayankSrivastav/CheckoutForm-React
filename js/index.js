@@ -406,3 +406,14 @@ var Checkout = React.createClass({
     );
   }
 });
+
+var Header = React.createClass({
+  displayName: 'Header',
+  render: function render() {
+    return React.createElement(
+      'header',
+      null,
+      React.createElement('input', { onChange: this.props.onChange, type: 'range', max: '100', min: '1', step: '1' })
+    );
+  }
+});
