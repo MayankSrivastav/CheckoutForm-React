@@ -438,3 +438,8 @@ var App = React.createClass({
   handleSubmit: function handleSubmit(e) {
     e.preventDefault();
   },
+  handleChange: function handleChange(e) {
+    this.setState({
+      duration: e.target.value
+    });
+  },
