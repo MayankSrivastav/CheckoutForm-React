@@ -435,3 +435,6 @@ var App = React.createClass({
       mounted: true
     });
   },
+  handleSubmit: function handleSubmit(e) {
+    e.preventDefault();
+  },
