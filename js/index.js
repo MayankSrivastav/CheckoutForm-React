@@ -247,7 +247,7 @@ var CheckoutButton = React.createClass({
   }
 });
 
-ar ExpiryDate = React.createClass({
+var ExpiryDate = React.createClass({
   displayName: 'ExpiryDate',
   render: function render() {
     return React.createElement(
