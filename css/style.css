@@ -16,3 +16,22 @@ header {
   z-index: 10;
   padding: 20px;
 }
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #17183B;
+}
+.App .Overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  filter: blur(10px);
+  opacity: .2;
+}
