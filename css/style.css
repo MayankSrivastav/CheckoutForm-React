@@ -92,3 +92,11 @@ header {
   font-size: 26px;
   font-weight: 200;
 }
+
+.ImagePreview .WorkspaceOverview .WorkspaceInformation .WorkspacePrice .Duration {
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  bottom: 2px;
+  margin-left: 5px;
+}
