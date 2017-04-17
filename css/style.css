@@ -87,3 +87,8 @@ header {
   font-weight: 600;
   font-size: 36px;
 }
+
+.ImagePreview .WorkspaceOverview .WorkspaceInformation .WorkspacePrice .Price {
+  font-size: 26px;
+  font-weight: 200;
+}
