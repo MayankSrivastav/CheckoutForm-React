@@ -108,3 +108,7 @@ header {
   font-weight: 300;
   margin-top: 20px;
 }
+
+.ImagePreview .WorkspaceOverview .WorkspaceMeta strong {
+  font-weight: 600;
+}
