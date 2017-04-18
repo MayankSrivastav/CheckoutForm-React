@@ -112,3 +112,8 @@ header {
 .ImagePreview .WorkspaceOverview .WorkspaceMeta strong {
   font-weight: 600;
 }
+
+.Checkout {
+  background: white;
+  width: 50%;
+}
