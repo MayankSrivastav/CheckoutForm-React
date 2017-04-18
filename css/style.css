@@ -117,3 +117,8 @@ header {
   background: white;
   width: 50%;
 }
+
+.Checkout .OrderSummary {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 10px;
+}
