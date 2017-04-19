@@ -132,3 +132,8 @@ header {
   opacity: .8;
   font-weight: 400;
 }
+
+.Checkout .OrderSummary table tr td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
