@@ -137,3 +137,10 @@ header {
   text-align: right;
   font-weight: 600;
 }
+
+.Checkout .OrderSummary .Total {
+  display: flex;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  align-items: flex-end;
+}
