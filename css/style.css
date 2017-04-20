@@ -157,3 +157,9 @@ header {
   font-size: 18px;
   margin-left: auto;
 }
+
+.Checkout .Title {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  padding: 20px;
+}
