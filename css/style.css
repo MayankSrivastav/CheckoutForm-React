@@ -163,3 +163,8 @@ header {
   font-size: 18px;
   padding: 20px;
 }
+
+.BasicInput {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
