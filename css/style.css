@@ -187,3 +187,7 @@ header {
   font-weight: 300;
   outline: none;
 }
+
+.BasicInput input:focus {
+  border-bottom: 1px solid #FFB49A;
+}
