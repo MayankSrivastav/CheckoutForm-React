@@ -226,3 +226,19 @@ header {
   font-weight: 300;
   outline: none;
 }
+
+.ExpiryDate select {
+  appearance: none;
+  flex: 1 0 auto;
+  padding: 10px;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid #17183B;
+  font-family: 'Lato', sans-serif;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  outline: none;
+  margin-right: 10px;
+}
