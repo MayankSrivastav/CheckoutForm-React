@@ -246,3 +246,9 @@ header {
 .ExpiryDate .CVCField {
   width: 20%;
 }
+
+.CVC {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
