@@ -283,3 +283,8 @@ header {
   font-size: 11px;
   border-bottom: 1px dotted #FFB49A;
 }
+
+.CheckoutButton {
+  padding: 0 20px;
+  text-align: center;
+}
