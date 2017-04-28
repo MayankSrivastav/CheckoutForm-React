@@ -274,3 +274,12 @@ header {
 .CVC input:focus {
   border-bottom: 1px solid #FFB49A;
 }
+
+.CVC span {
+  display: block;
+  padding-top: 20px;
+  margin-left: 10px;
+  color: #FFB49A;
+  font-size: 11px;
+  border-bottom: 1px dotted #FFB49A;
+}
