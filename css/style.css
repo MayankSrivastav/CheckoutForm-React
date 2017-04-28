@@ -288,3 +288,18 @@ header {
   padding: 0 20px;
   text-align: center;
 }
+
+.CheckoutButton button {
+  background: #ffa181;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 300;
+  outline: none;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
