@@ -303,3 +303,10 @@ header {
   padding: 10px 0;
   margin-bottom: 10px;
 }
+
+.CheckoutButton button:hover {
+  background: #ff8e67;
+}
+.CheckoutButton button:active {
+  transform: scale(0.99);
+}
