@@ -310,3 +310,10 @@ header {
 .CheckoutButton button:active {
   transform: scale(0.99);
 }
+
+.CheckoutButton span {
+  font-size: 11px;
+  color: #bfbfbf;
+  font-weight: 300;
+  text-align: center;
+}
