@@ -317,3 +317,21 @@ header {
   font-weight: 300;
   text-align: center;
 }
+
+.overlay-enter {
+  opacity: 0.01;
+}
+
+.overlay-enter.overlay-enter-active {
+  opacity: .2;
+  transition: opacity .5s ease .5s;
+}
+
+.container-enter {
+  opacity: 0.01;
+}
+
+.container-enter.container-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
